@@ -1,1 +1,1 @@
-{"root":["./config/src/main.ts","./config/src/vite-env.d.ts","./config/src/App.vue","./config/src/components/HelloWorld.vue"],"version":"5.6.3"}
+{"root":["./node_modules/@kintone/dts-gen/kintone.d.ts","./desktop/src/main.ts","./desktop/src/vite-env.d.ts","./desktop/src/App.vue","./desktop/src/components/HelloWorld.vue"],"version":"5.6.3"}

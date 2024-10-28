@@ -21,9 +21,14 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
+  "files": ["./node_modules/@kintone/dts-gen/kintone.d.ts"],
   "include": [
     "config/src/**/*.ts",
     "config/src/**/*.tsx",
-    "config/src/**/*.vue"
-  ]
+    "config/src/**/*.vue",
+    "desktop/src/**/*.ts",
+    "desktop/src/**/*.tsx",
+    "desktop/src/**/*.vue"
+  ],
+  "exclude": ["node_modules"]
 }
