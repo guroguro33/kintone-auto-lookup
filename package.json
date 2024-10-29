@@ -6,10 +6,10 @@
     "dev-config": "vite -c vite.config.ts",
     "dev-desktop": "vite -c vite.plugin.config.ts",
     "deploy": "npm-run-all --serial build-config build-desktop build-plugin upload",
-    "build-config": "vue-tsc -b && vite build -c vite.config.ts",
-    "build-desktop": "vue-tsc -b && vite build -c vite.plugin.config.ts",
+    "build-config": "vue-tsc -b && vite build --watch -c vite.config.ts",
+    "build-desktop": "vue-tsc -b && vite build --watch -c vite.plugin.config.ts",
     "preview": "vite preview",
-    "build-plugin": "kintone-plugin-packer --ppk private.ppk --out dist/plugin.zip static",
+    "build-plugin": "kintone-plugin-packer --watch static --ppk private.ppk --out dist/plugin.zip static",
     "upload": "kintone-plugin-uploader --base-url https://ul229pwboueo.cybozu.com --username ishiguro.toru@arces.co.jp --password Toru5555 dist/plugin.zip --watch --waiting-dialog-ms 3000"
   },
   "dependencies": {
